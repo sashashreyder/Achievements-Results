@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Achievements & Results</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Achievements & Results</h1>
+  
+    <p class="instructions">
+      Type the missing word or phrase in each blank. Hover the <strong>?</strong> for a hint, then click <em>Check your score</em> to see how you did.
+    </p>
+  
+    <p>
+      By the time the team arrived, they
+      <span class="blank" data-answer="had trained">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">prepared every day</span>
+      </span>
+      for months. Everyone felt
+      <span class="blank" data-answer="motivated">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">inspired to do well</span>
+      </span>
+      and ready for the
+      <span class="blank" data-answer="championship">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">big competition to win</span>
+      </span>.
+    </p>
+  
+    <p>
+      The players
+      <span class="blank" data-answer="competed">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">tried to win</span>
+      </span>
+      with great
+      <span class="blank" data-answer="teamwork">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">working well together</span>
+      </span>
+      and
+      <span class="blank" data-answer="strategy">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">a smart game plan</span>
+      </span>.
+    </p>
+  
+    <p>
+      Their
+      <span class="blank" data-answer="performance">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">how well they did</span>
+      </span>
+      was
+      <span class="blank" data-answer="astonishing">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">very surprising (in a good way)</span>
+      </span>,
+      and they
+      <span class="blank" data-answer="achieved a goal">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">reached what they wanted</span>
+      </span>
+      together.
+    </p>
+  
+    <p>
+      The coach was
+      <span class="blank" data-answer="proud">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">felt very pleased</span>
+      </span>
+      of each person. Even though there were challenges, the effort was
+      <span class="blank" data-answer="worth">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">good result for the time and energy</span>
+      </span>
+      it took.
+    </p>
+  
+    <button id="check">Check your score</button>
+  </div>
+  
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
